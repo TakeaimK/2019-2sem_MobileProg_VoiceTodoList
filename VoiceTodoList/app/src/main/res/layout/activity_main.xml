@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#FFE57F"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/colorPrimaryDark"
+        android:dividerHeight="4sp"
+        android:overScrollMode="always"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFD180"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/newitem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:paddingRight="10dp" />
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+
+            android:background="#8C9EFF"
+            android:fontFamily="@font/longleg"
+            android:onClick="mOnClick"
+            android:text="메모 추가"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+
+            android:background="#FF8A80"
+            android:fontFamily="@font/longleg"
+            android:onClick="mOnClick"
+            android:text="메모 삭제"
+            android:textColor="#000000"
+            android:textColorHighlight="#000000" />
+    </LinearLayout>
+
+
+    <ImageButton
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="200sp"
+        android:layout_weight="1"
+        android:background="#FFD180"
+        android:paddingTop="10dp"
+        android:onClick="voiceButton"
+        android:src="@drawable/voiceimg" />
+
+</LinearLayout>
